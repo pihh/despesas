@@ -1,0 +1,20 @@
+<ion-app>
+  <ion-router-outlet></ion-router-outlet>
+  <div id="password-container">
+    <div id="password-screen">
+      <p>
+        <ion-input
+          required
+          [(ngModel)]="password"
+          name="password"
+          type="password"
+        ></ion-input>
+      </p>
+      <p>
+        <ion-button (click)="login()">
+          Login
+        </ion-button>
+      </p>
+    </div>
+  </div>
+</ion-app>
